@@ -68,7 +68,7 @@
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
         <div class="main-title">Tree Regression Forecasting</div>
-        <div class="body-text">This model forecasts library funding needs based on surveys filled out by the libraries every year.</div>
+        <div class="body-text">In this project we were able to determine the funding needs of Ontario libraries based on the population of the communities they are in. </div>
         <image class="project-header-image" src="../assets/images/desktop.jpeg">
       </div>
 
@@ -82,9 +82,10 @@
       <div id="project-details">
         <div class="subheader-text">Project Details</div>
         <div class="project-details-content">
-          <div class="body-text">Libraries in Ontario fill out surveys every year answering questions such as how many hours they are open every day, how many 3D printers the library contains and much more.</div>
-          <div class="body-text">This data was loaded into python and cleaned. Then a base regression tree was generated which suffered heavily from over fitting. The features were selected until an appropriate model was generated which able to determine funding needs based on the resident population of the library alone with an adjusted R2 of 0.88.</div>
-          <div class="body-text">Next the model was used to determine the funding requirements of various population sizes for the purpose of seeing what funding might be required for a new library being built in a city with a population in that range.</div>
+          <div class="body-text">Ontario provides funding to Ontario Public libraries every year. What determines how much funding a library will need? What would the funding requirements of a newly built library be? How much funding will libraries need next year?</div>
+          <div class="body-text">The Ontario Library Survey data was analysed with the intention of determining the answers to these questions.  After analysis it was found that population was the feature correlated with funding which could be used help answer the questions being asked. If we generate a model based on population which determines funding, then we would only need to know the population of the location where the new library was being built to determine it’s funding needs. We would only need to look at the forecast for Ontario’s population next year to know how much funding the libraries would need.</div>
+          <div class="body-text">However simple linear regression returns a poor R2 when preformed on these two features. What next? Tree regression is the answer the model preformed much better and a much better R2 was obtained along with a ???MAE???</div>
+	  <div class="body-text">To demonstrate the model funding was predicted for populations in the ranges shown.</div>
         </div>
       </div>
 
